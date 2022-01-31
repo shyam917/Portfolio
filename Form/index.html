@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" type="text/css" href="demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content=
+        "width=device-width, 
+        initial-scale=1.0" />
+  
+    <title>Digital Clock</title>
+  
+    <style>
+        #clock {
+            font-size: 150px;
+            width: 150px;
+            margin: 20px;
+            text-align: center;
+            border-radius: 10px;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+		
+
+
+<header class="ScriptHeader">
+    <div class="rt-container">
+    	<div class="col-rt-12">
+        	<div class="rt-heading">
+            	<h1>Contact Form</h1>	
+                
+            </div>
+        </div>
+    </div>
+</header>
+
+<section>
+    <div class="rt-sm-container">
+          <div class="col-rt-12">
+              
+              <div class="wrapper">
+				<form method="post" action="" class="ccform">
+                <div class="ccfield-prepend">
+                    <span class="ccform-addon"><i class="fa fa-user fa-2x fa-spin"></i></span>
+                    <input class="ccformfield" type="text" placeholder="Full Name" required>
+                </div>
+                <div class="ccfield-prepend">
+                    <span class="ccform-addon"><i class="fa fa-envelope fa-2x"></i></span>
+                    <input class="ccformfield" type="text" placeholder="Email" required>
+                </div>
+                <div class="ccfield-prepend">
+                    <span class="ccform-addon"><i class="fa fa-mobile-phone fa-2x"></i></span>
+                    <input class="ccformfield" type="text" placeholder="Phone">
+                </div>
+                 <div class="ccfield-prepend">
+                    <span class="ccform-addon"><i class="fa fa-info fa-2x"></i></span>
+                    <input class="ccformfield" type="text" placeholder="Subject" required>
+                </div>
+                <div class="ccfield-prepend">
+                    <span class="ccform-addon"><i class="fa fa-comment fa-2x"></i></span>
+                    <textarea class="ccformfield" name="comments" rows="8" placeholder="Message" required></textarea>
+                </div>
+                <div class="ccfield-prepend">
+                    <input class="ccbtn" type="submit" value="Submit">
+                </div>
+                </form>
+			</div>
+              
+		</div>
+    </div>
+</section>
+     
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-76614800-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'UA-76614800-1');
+    </script>
+<div id="clock">8:10:45</div>
+  
+<script>
+    setInterval(showTime, 1000);
+    function showTime() {
+        let time = new Date();
+        let hour = time.getHours();
+        let min = time.getMinutes();
+        let sec = time.getSeconds();
+        am_pm = "AM";
+
+        if (hour > 12) {
+            hour -= 12;
+            am_pm = "PM";
+        }
+        if (hour == 0) {
+            hr = 12;
+            am_pm = "AM";
+        }
+
+        hour = hour < 10 ? "0" + hour : hour;
+        min = min < 10 ? "0" + min : min;
+        sec = sec < 10 ? "0" + sec : sec;
+
+        let currentTime = hour + ":" 
+            + min + ":" + sec + am_pm;
+
+        document.getElementById("clock")
+            .innerHTML = currentTime;
+    }
+
+    showTime();
+</script>
+	</body>
+</html>

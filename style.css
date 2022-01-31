@@ -1,0 +1,380 @@
+
+
+html {
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+  display: none;
+}
+
+body {
+
+  margin: 0px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-image: url(img/BG.jpg);
+}
+
+
+.bnt2 {
+  border: 2px solid green;
+  width: 150px;
+  height: 50px;
+  border: none;
+  color: white;
+  background-color: #6930c3;
+  border-radius: 4px;
+  letter-spacing: 2px;
+
+
+}
+
+.bnt2:hover {
+  background-color: #a799b7;
+  color: #000;
+
+}
+
+li a:hover{
+  color: black;
+}
+li{
+  list-style: none;
+  margin: 20px;
+
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+ul{
+  background-color: #000;
+  border-radius: 10px;
+  margin: 0;
+  padding: 30px;
+  float: right;
+  margin-right:10px;
+  position: fixed;
+  bottom: 100px;
+  left: 1050px;
+
+}
+
+
+h2 {
+  padding: 20px;
+}
+
+.heading{
+  margin: 20px;
+  padding: 0;
+  color: white;
+  font-size: 50px;
+  font-family:sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+
+}
+.min_heading{
+  margin: 20px;
+  position: relative;
+  top: 30px;
+  padding: 0;
+  color: white;
+  font-size: 50px;
+  font-family:sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+}
+/**************************** Box 1 ***********************/
+.box1 {
+  height: 100vh;
+  width: 100%;
+  background-image: url(img/box1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.container_1{
+  display: inline-flex;
+  height: 300px;
+  width: 1000px;
+  position: relative;
+  top: 50px;
+}
+.container_1  img{
+  border-radius: 20px;
+  margin-left: 20px;
+}
+
+.container_1 p{
+  margin-left: 20px;
+  position: relative;
+  top: 100px;
+  color: #fff;
+
+}
+
+/**************************** Box 2 ***********************/
+
+.box2 {
+  height: 800px;
+  width: 100%;
+  color: #fff;
+}
+.container_2{
+
+  height: 300px;
+  width: 1000px;
+  position: relative;
+  top: 50px;
+}
+.container_2 p{
+  margin-left: 20px;
+  position: relative;
+  top: 100px;
+  color: #fff;
+
+}
+.img_box4{
+  height: 300px;
+  width: 500px;
+  background-image: url(img/sp4.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  top: 100px;
+  left: 500px;
+  border-radius: 20px;
+
+}
+
+/**************************** Box 3 ***********************/
+
+.box3 {
+  height: 100vh;
+  width: 100%;
+  color: #fff;
+}
+
+.img_box1{
+  height: 300px;
+  width: 500px;
+  background-image: url(img/sp1.webp);
+  background-size: cover;
+  background-position: center;
+  margin: 20px;
+  border-radius: 20px;
+}
+
+.img_box2{
+  height: 300px;
+  width: 500px;
+  background-image: url(img/sp2.jpg);
+  background-size: cover;
+  background-position: center;
+  margin: 20px;
+  border-radius: 20px;
+}
+
+.img_box3{
+  height: 300px;
+  width: 500px;
+  background-image: url(img/sp3.jpg);
+  background-size: cover;
+  background-position: center;
+  margin: 20px;
+  border-radius: 20px;
+}
+
+/*********************BOX 4**************************/
+.box4 {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+.work_box{
+  height: 100px;
+  width:600px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.work1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 300px;
+  border-radius: 10px;
+  transition: transform .6s;
+  background-image: url(game.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.work1:hover{
+  box-shadow: 2px 2px 34px 21px rgb(248, 11, 11);
+  border-radius: 10px;
+  transform: scale(1.2);
+
+}
+.work2{
+  border-radius: 10px;
+  height: 100px;
+  width: 100px;
+  border-radius: 10px;
+  transition: transform .6s;
+  background-image: url(Form.png);
+  background-position: center;
+  background-size: cover;
+  background-color: #f7504f;
+}
+.work2:hover{
+  box-shadow: 2px 2px 34px 21px rgb(246, 140, 0);
+  border-radius: 10px;
+  transform: scale(1.2);
+
+}
+h2.heading1 {
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
+  font-family: sans-serif;
+  font-size: 50px;
+  letter-spacing: 2px;
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
+
+
+/**************************** Box 5 ***********************/
+
+.Contact_box {
+  height: 200px;
+  width: 100%;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(228,34,18,1) 61%, rgba(0,212,255,1) 100%);
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  display: block;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.4);
+}
+
+.Contact_heading {
+  margin: 20px;
+  padding: 0;
+  font-family: sans-serif;
+  font-size: 20px;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+  color: #fff;
+  top: 10px;
+
+}
+
+
+
+.social_media i {
+  color: #000;
+}
+
+.social_media{
+  
+  margin-top: 40px;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ .social_media a {
+  background: rgb(229, 227, 255);
+  text-align: center;
+  height: 50px;
+  width: 100px;
+  padding: 9px;
+  margin:0 10px;
+  border-radius: 8px;
+  text-decoration: none;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.4);
+  transition: transform 1s;
+}
+
+.social_media a:hover {
+  border: 1px solid(0, 0, 0, 0.01);
+  transform: translateY(10px);
+}
+
+.social_media a:hover i {
+  transform: scale(1.2);
+}
+
+.social_media a:hover {
+
+  transform: scale(1.2);
+}
+
+/* color of facebook icon */
+.social_media a:hover .fa-facebook {
+  color: #3b5998;
+}
+
+
+
+
+/* color of whatsapp icon */
+.social_media a:hover .fa-whatsapp {
+  color:green;
+}
+
+
+
+/* color of instagram icon */
+.social_media a:hover .fa-instagram {
+  color: #fff;
+}
+
+.social_media a.insta:hover {
+  background: linear-gradient(45deg, #ffde85 0%, #f7792a 30%, #f7504f 40%, #d82b81 60%, #d82b81 75%, #9536c2 100%);
+}
+
+/* color of Mail icon */
+.social_media a:hover .fa-envelope {
+  color: #E74856;
+}
+
+
+
+.forms{
+  padding:10px;
+ margin-left: 20px;  
+ margin-top: 40px;
+  background-color: #6930c3;
+  border: #000;
+}
+
+footer {
+  background-color: #333;
+  overflow: hidden;
+}
+.color_foot{
+  color: #fff;
+}
+footer a {
+  text-decoration: none;
+  padding: 20px;
+  text-align: center;
+  float: left;
+  color: white;
+}
